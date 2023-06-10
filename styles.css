@@ -271,6 +271,10 @@ html {
     .w3-table th:first-child,.w3-table td:first-child,.w3-table-all th:first-child,.w3-table-all td:first-child {
     padding-left:16px
     }
+
+    .w3-outline-white {
+        border: 2px solid white;
+    }
     
     .w3-btn,.w3-button {
     border:none;
@@ -1631,4 +1635,39 @@ html {
     border-color:#e7ffff!important
     }
     
+    /* my stuff */
     
+    .glowing-button {
+        animation: glowing 2s ease-in-out infinite;
+    }
+
+    @keyframes glowing {
+        0% {
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        }
+        50% {
+            box-shadow: 0 0 20px rgba(102, 0, 255, 1);
+        }
+        100% {
+            box-shadow: 0 0 5px rgba(255, 255, 255, 0.3);
+        }
+    }
+    .my-footer {
+        background-color: black !important;
+      }
+      
+    #my-footer {
+        background-color: #000 !important;
+    }
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+      
+
