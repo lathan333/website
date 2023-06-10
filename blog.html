@@ -16,28 +16,34 @@ body {font-family: "Open Sans"}
 
 <!-- Navbar -->
 <div class="w3-top">
-  <!-- Normal navbar -->
-  <div class="w3-bar w3-black w3-card w3-left-align w3-hide-small">
-    <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-    <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
-    <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
-    <a href="blog.html" class="w3-bar-item w3-button w3-padding-large w3-white">CyberVerse Blog</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large">Get my Resume</a>
+  <div class="w3-bar w3-black w3-card w3-left-align">
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
+    <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Me</a>
+    <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Portfolio</a>
+    <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-deep-purple">CyberVerse Blog</a>
+    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Me</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Get my Resume</a>
+    <div class="w3-bar-item w3-right w3-padding">
+      <a href="https://www.linkedin.com/in/lathan-birmingham/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity fa-2x w3-text-deep-purple" style="margin-right: 8px;"></i></a>
+      <a href="https://github.com/lathan333" target="_blank"><i class="fa fa-github w3-hover-opacity fa-2x w3-text-deep-purple"></i></a>
+    </div>
   </div>
+</div>
 
   <!-- Hamburger menu button -->
   <div class="w3-right w3-hide-medium w3-hide-large">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-deep-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
   </div>
 </div>
 
 <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-large" style="margin-top: 0;">
+  <span class="w3-bar-item w3-xlarge" style="padding: 16px 24px; display: block;">Menu</span>
   <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
   <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
   <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
-  <a href="blog.html" class="w3-bar-item w3-button w3-padding-large">CyberVerse Blog</a>
+  <a href="blog.html" class="w3-bar-item w3-button w3-padding-large w3-deep-purple">CyberVerse Blog</a>
   <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large">Get my Resume</a>
 </div>
@@ -50,8 +56,9 @@ and is wrapped around the whole page content, except for the footer in this exam
 
   <!-- Image header -->
   <header class="w3-display-container w3-wide" id="home">
-    <img class="w3-image" src="CyberVerse.jpg" alt="Welcome to the CyberVerse" width="1600" height="1060">
+    <img class="w3-image" src="CyberVerse.jpg" alt="Welcome to the CyberVerse" width="1600" height="1060" style: top-margin:"20%">
     <div class="w3-display-left w3-padding-large">
+      <h1> </h1>
       <h1 class="w3-text-white">Welcome to the</h1>
       <h1 class="w3-jumbo w3-text-white"><b>CyberVerse</b></h1>
       <h6><button class="w3-button w3-white w3-padding-large w3-large w3-opacity w3-hover-opacity-off" onclick="document.getElementById('subscribe').style.display='block'">SUBSCRIBE</button></h6>
