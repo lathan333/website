@@ -19,29 +19,36 @@ body {font-family: "Open Sans"}
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card w3-left-align">
     <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-deep-purple">Home</a>
+    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small w3-deep-purple">Home</a>
     <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Me</a>
     <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Portfolio</a>
     <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CyberVerse Blog</a>
     <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Me</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Get my Resume</a>
-    <div class="w3-bar-item w3-hide-small w3-right">
+    <div class="w3-bar-item w3-right w3-padding">
       <a href="https://www.linkedin.com/in/lathan-birmingham/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity fa-2x w3-text-deep-purple" style="margin-right: 8px;"></i></a>
       <a href="https://github.com/lathan333" target="_blank"><i class="fa fa-github w3-hover-opacity fa-2x w3-text-deep-purple"></i></a>
     </div>
   </div>
 </div>
 
+  <!-- Hamburger menu button -->
+  <div class="w3-right w3-hide-medium w3-hide-large">
+    <a class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-deep-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+  </div>
+</div>
 
 <!-- Navbar on small screens -->
-<div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium w3-large">
+<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-large" style="margin-top: 0;">
+  <span class="w3-bar-item w3-xlarge" style="padding: 16px 24px; display: block;">Menu</span>
+  <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-dark-purple">Home</a>
   <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
   <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
   <a href="blog.html" class="w3-bar-item w3-button w3-padding-large">CyberVerse Blog</a>
   <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large">Get my Resume</a>
 </div>
-</div>
+
 
 <!-- Header -->
 <header class="w3-container w3-white w3-center" style="padding:128px 16px; background-image: url('lathan.avif'); background-size: cover; background-position: center;">
@@ -59,7 +66,7 @@ body {font-family: "Open Sans"}
 <div class="w3-row-padding w3-padding-16 w3-container">
   <div class="w3-content">
     <div class="w3-twothird">
-      <h1>Freelance Web Developer</h1>
+      <h1 class="w3-text-deep-purple">Freelance Web Developer</h1>
       <h5 class="w3-padding-32">As a skilled and experienced web developer, I specialize in crafting clean and concise websites for both commercial and personal projects. With a keen eye for design aesthetics and a focus on user experience, I strive to create visually appealing and functional websites that leave a lasting impression.</h5>
       <p class="w3-text-grey">Every website on this platform has been meticulously created by me, reflecting my commitment to quality and attention to detail. By leveraging the latest web development technologies and techniques, I ensure that each website I develop is responsive, user-friendly, and optimized for performance. Whether you need a professional business website, an engaging e-commerce platform, or a captivating personal blog, I have the expertise to bring your vision to life.</p>
       <p class="w3-text-grey">To get started on your web development project, feel free to contact me using the convenient form on my website. I am dedicated to providing exceptional customer service, and I will promptly respond to your inquiries, addressing any questions or concerns you may have. You can also connect with me on LinkedIn to explore my portfolio and discuss your project in further detail. Together, we can create a compelling online presence that aligns with your goals and exceeds your expectations.</p>
@@ -84,7 +91,7 @@ body {font-family: "Open Sans"}
     </div>
 
     <div class="w3-twothird">
-      <h1 class="w3-text-black">Cybersecurity Enthusiast</h1>
+      <h1 class="w3-text-deep-purple">Cybersecurity Enthusiast</h1>
       <h5 class="w3-padding-32 w3-text-black">
         As a recent graduate of a Bachelor of Science in Cybersecurity from Bellevue University, I am passionate about the ever-evolving field of cybersecurity. Equipped with a solid foundation in network security, cryptography, and ethical hacking, I am well-prepared to tackle the challenges posed by the digital landscape.</h5>
 
