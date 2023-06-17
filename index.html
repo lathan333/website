@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<title>Home</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="styles.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
-body {font-family: "Open Sans"}
-</style>
+  <title>Home</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style>
+    h1, h2, h3, h4, h5, h6 {font-family: "Oswald"}
+    body {font-family: "Open Sans"}
+  </style>
 </head>
 <body>
 
@@ -23,7 +23,7 @@ body {font-family: "Open Sans"}
     <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">About Me</a>
     <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Portfolio</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CyberVerse Blog</a>
-    <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Me</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white" onclick="openModal()">Contact Me</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Get my Resume</a>
     <div class="w3-bar-item w3-right w3-padding">
       <a href="https://www.linkedin.com/in/lathan-birmingham/" target="_blank"><i class="fa fa-linkedin w3-hover-opacity fa-2x w3-text-deep-purple" style="margin-right: 8px;"></i></a>
@@ -32,10 +32,9 @@ body {font-family: "Open Sans"}
   </div>
 </div>
 
-  <!-- Hamburger menu button -->
-  <div class="w3-right w3-hide-medium w3-hide-large">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-deep-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-  </div>
+<!-- Hamburger menu button -->
+<div class="w3-right w3-hide-medium w3-hide-large">
+  <a class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-deep-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
 </div>
 
 <!-- Navbar on small screens -->
@@ -45,10 +44,59 @@ body {font-family: "Open Sans"}
   <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
   <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large">CyberVerse Blog</a>
-  <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="openModal()">Contact Me</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large">Get my Resume</a>
 </div>
 
+<!-- Modal -->
+<div id="id01" class="w3-modal">
+  <div class="w3-modal-content w3-card-4 w3-animate-top">
+    <header class="w3-container w3-theme-l1"> 
+      <span onclick="closeModal()" class="w3-button w3-display-topright">×</span>
+      <div class="w3-row-padding">
+      <form class="w3-container w3-card-4">
+        <h2>Input Form</h2>
+        <div class="w3-section">      
+          <input class="w3-input" type="text" required>
+          <label>Name</label>
+        </div>
+        <div class="w3-section">      
+          <input class="w3-input" type="text" required>
+          <label>Email</label>
+        </div>
+        <div class="w3-section">      
+          <input class="w3-input" type="text" required>
+          <label>Subject</label>
+        </div>
+      
+        <div class="w3-row">
+        <div class="w3-half">
+          <input id="milk" class="w3-check" type="checkbox" checked="checked">
+          <label>Milk</label>
+          <br>
+          <input id="sugar" class="w3-check" type="checkbox">
+          <label>Sugar</label>
+          <br>
+          <input id="lemon" class="w3-check" type="checkbox" disabled>
+          <label>Lemon (Disabled)</label>
+          <br><br>
+        </div>
+      
+        <div class="w3-half">
+          <input id="male" class="w3-radio" type="radio" name="gender" value="male" checked>
+          <label>Male</label>
+          <br>
+          <input id="female" class="w3-radio" type="radio" name="gender" value="female">
+          <label>Female</label>
+          <br>
+          <input id="unknown" class="w3-radio" type="radio" name="gender" value="" disabled>
+          <label> Don't know (Disabled)</label>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
 
 <!-- Header -->
 <header class="w3-container w3-white w3-center" style="padding:128px 16px; background-image: url('lathan.avif'); background-size: cover; background-position: center;">
@@ -110,6 +158,16 @@ function myFunction() {
   } else { 
     x.className = x.className.replace(" w3-show", "");
   }
+}
+
+// Open the modal
+function openModal() {
+  document.getElementById("id01").style.display = "block";
+}
+
+// Close the modal
+function closeModal() {
+  document.getElementById("id01").style.display = "none";
 }
 </script>
 
