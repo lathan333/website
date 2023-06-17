@@ -1,38 +1,30 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-<title>W3.CSS Template</title>
-<meta charset="UTFc-8">
+<title>About Me</title>
+<meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="styles.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
 h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
 body {font-family: "Open Sans"}
-body, html {height: 100%}
-.bgimg {
-  background-image: url('coming-soon.jpg');
-  min-height: 100%;
-  background-position: center;
-  background-size: cover;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
 </style>
 </head>
 <body>
+  
 <!-- Navbar -->
 <div class="w3-top">
   <div class="w3-bar w3-black w3-card w3-left-align">
-    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="home.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
+    <a class="w3-bar-item w3-button w3-hide-medium w3-hide-large w3-right w3-padding-large w3-hover-white w3-large w3-black" href="javascript:void(0);" onclick="toggleNav()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Home</a>
     <a href="about.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white w3-deep-purple">About Me</a>
     <a href="portfolio.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Portfolio</a>
-    <a href="blog.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CyberVerse Blog</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">CyberVerse Blog</a>
     <a href="contact.html" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Contact Me</a>
     <a href="#" class="w3-bar-item w3-button w3-hide-small w3-padding-large w3-hover-white">Get my Resume</a>
     <div class="w3-bar-item w3-right w3-padding">
@@ -42,56 +34,176 @@ body, html {height: 100%}
   </div>
 </div>
 
-  <!-- Hamburger menu button -->
-  <div class="w3-right w3-hide-medium w3-hide-large">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hover-white w3-large w3-deep-purple" href="javascript:void(0);" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-  </div>
-</div>
-
 <!-- Navbar on small screens -->
 <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-large" style="margin-top: 0;">
   <span class="w3-bar-item w3-xlarge" style="padding: 16px 24px; display: block;">Menu</span>
-  <a href="home.html" class="w3-bar-item w3-button w3-padding-large">Home</a>
-  <a href="about.html" class="w3-bar-item w3-button w3-padding-large w3-deep-purple">About Me</a>
+  <a href="index.html" class="w3-bar-item w3-button w3-padding-large w3-dark-purple">Home</a>
+  <a href="about.html" class="w3-bar-item w3-button w3-padding-large">About Me</a>
   <a href="portfolio.html" class="w3-bar-item w3-button w3-padding-large">Portfolio</a>
-  <a href="blog.html" class="w3-bar-item w3-button w3-padding-large">CyberVerse Blog</a>
+  <a href="#" class="w3-bar-item w3-button w3-padding-large">CyberVerse Blog</a>
   <a href="contact.html" class="w3-bar-item w3-button w3-padding-large">Contact Me</a>
   <a href="#" class="w3-bar-item w3-button w3-padding-large">Get my Resume</a>
 </div>
 
-<div class="bgimg">
-  <h1 class="w3-jumbo w3-text-white">Coming Soon</h1>
+
+<!-- !PAGE CONTENT! -->
+<div class="w3-main" style="margin: 50px">
+
+  <!-- Header -->
+  <div class="w3-container" style="margin-top:46px" id="showcase">
+    <h1 class="w3-jumbo"><b>About Me</b></h1>
+    <h1 class="w3-xxxlarge w3-text-deep-purple" id="introduction"><b>Introduction</b></h1>
+    <hr style="width: 50px; border: 5px solid #673ab7" class="w3-round">
+    <p>As a dedicated and passionate professional, I bring a diverse range of skills and expertise to the table. With a strong foundation in cybersecurity principles gained during my pursuit of a Bachelor's degree in Cybersecurity from Bellevue University, I have honed my abilities to deliver top-notch web development solutions while prioritizing the security and protection of digital assets. In addition to my web development journey that began in 2023, I have also excelled in the field of cybersecurity, exploring secure website creation and administration processes, conducting risk assessments, and ensuring the security of database systems. Furthermore, my experience as a Technical Document Support Specialist at Epiq Global has equipped me with the ability to troubleshoot software and hardware issues, develop automated solutions to streamline processes, and provide technical guidance to users of document management systems.</p>
+  </div>
+
+  <!-- Experience -->
+  <div class="w3-container" id="experience" style="margin-top:46px">
+    <h1 class="w3-xxxlarge w3-text-deep-purple" id="experience-title"><b>Technical Experience</b></h1>
+    <hr style="width: 50px; border: 5px solid #673ab7" class="w3-round">
+    <h2>Freelance Web Developer</h2>
+    <h3>Remote</h3>
+    <p><em>April 2023 - Present</em></p>
+    <p>As a dedicated and passionate web developer, I have embarked on an exciting journey in 2023 to master the art of crafting exceptional websites. With a strong focus on HTML, CSS, and JavaScript, I have diligently honed my skills to deliver top-notch front-end web development solutions. In April 2023, I ventured into the world of freelancing on Upwork, where you can find my portfolio and explore the projects I have successfully completed.</p>
+    <p>I take great pride in my ability to collaborate effectively with other web developers, pooling our collective expertise to create outstanding results. As a freelance web developer, I specialize in delivering clean, user-friendly, and visually appealing websites tailored to both personal and commercial needs. My keen eye for design aesthetics ensures that each website I develop leaves a lasting impression while providing a seamless user experience.</p>
+    <p>Quality and attention to detail are at the forefront of my work. I meticulously craft every website to reflect these values, utilizing the latest web development technologies and techniques to ensure responsiveness, user-friendliness, and optimal performance. Whether you require a professional business website, an engaging e-commerce platform, or a captivating personal blog, I possess the expertise to transform your vision into a reality.</p>
+    <p>To initiate your web development project, I encourage you to reach out to me through the convenient contact form on my website. Providing exceptional customer service is my priority, and I am committed to promptly responding to your inquiries, addressing any questions or concerns you may have. Additionally, you can connect with me on LinkedIn, where you can explore my portfolio in greater detail and engage in a comprehensive discussion about your project requirements. Together, we can forge a compelling online presence that aligns perfectly with your goals and surpasses your expectations.</p>
+    <p>It is worth noting that this website is hosted on an AWS S3 instance, highlighting my proficiency in utilizing robust and scalable hosting solutions. By leveraging this technology, I guarantee the smooth functioning and accessibility of your website, ensuring an uninterrupted online experience for your users.</p>
+    <h2>Technical Document Support Specialist</h2>
+    <h3>Epiq Global - Remote</h3>
+    <p><em>February 2022 - April 2023</em></p>
+    <p>In my role as a Technical Support Specialist at Epiq Global, I have been responsible for various key tasks. This includes troubleshooting software and hardware issues to ensure smooth system operation for clients. I have successfully resolved document corruption and addressed problems related to document management system software. To enhance efficiency, I have developed and implemented automated solutions to streamline processes. Additionally, I have provided technical guidance and support to users of document management systems, assisting them with tasks such as document creation, formatting, and conversion. Maintaining the utmost confidentiality, I have handled records and files with strict adherence to security protocols.</p>
+  </div>
+  
+  <!-- Education -->
+  <div class="w3-container" id="education" style="margin-top:46px">
+    <h1 class="w3-xxxlarge w3-text-deep-purple" id="education-title"><b>Education</b></h1>
+    <hr style="width: 50px; border: 5px solid #673ab7" class="w3-round">
+    <h2>Bachelor of Science in Cybersecurity</h1>
+    <h3>Bellevue University</h3>
+    <p><em>June 2023</em></p>
+    <p>During my pursuit of a Bachelor's degree in Cybersecurity from Bellevue University (Aug 2018 - Jun 2023) with a GPA of 3.0, I gained invaluable hands-on experience and developed a strong foundation in cybersecurity principles. Here are some notable accomplishments from my academic journey:</p>
+    <ul>
+      <li>Created cybersecurity apps using Python, showcasing programming proficiency and application development expertise.</li>
+      <li>Utilized network security protocols to proactively detect and prevent potential vulnerabilities, ensuring robust protection for systems and data.</li>
+      <li>Conducted risk assessments and audits to analyze vulnerabilities, implementing measures to enhance security posture.</li>
+      <li>Explored secure website creation and administration processes, focusing on safeguarding sensitive data and preventing unauthorized access.</li>
+      <li>Ensured the security of a small application using MongoDB, demonstrating proficiency in securing database systems.</li>
+      <li>Researched tools and techniques for forensic analysis of computers, network systems, and mobile devices, acquiring insights into digital investigations.</li>
+      <li>Participated in a simulated and thorough penetration test, generating a concise and insightful report summarizing the findings.</li>
+    </ul>    
+    <p>These experiences have equipped me with a comprehensive skill set and a deep understanding of cybersecurity best practices, enabling me to contribute effectively in real-world scenarios.</p>
+  </div>
+
+  <!-- Skills -->
+  <div class="w3-container" id="skills" style="margin-top:46px">
+    <h1 class="w3-xxxlarge w3-text-deep-purple" id="skills-title"><b>Skills</b></h1>
+    <hr style="width: 50px; border: 5px solid #673ab7" class="w3-round">
+    <div class="w3-row-padding w3-center w3-margin-top">
+      <div class="w3-third">
+        <div class="w3-card w3-container" style="min-height:460px">
+        <h3>Cybersecurity</h3><br>
+        <i class="fa fa-lock w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <p>Risk Assessments and Mitigation </p>
+        <p>Network Security</p>
+        <p>Database Security</p>
+        <p>Penetration Testing</p>
+        <p>Incident Response</p>
+        </div>
+      </div>
+      
+      <div class="w3-third">
+        <div class="w3-card w3-container" style="min-height:460px">
+        <h3>Front-End Web Development</h3><br>
+        <i class="fa fa-code w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <p>HTML, CSS, JavaScript</p>
+        <p>Responsive, Assessible Webpages</p>
+        <p>Search Engine Optimization</p>
+        <p>Personal and Commercial</p>
+        <p>Web Application Security</p>
+        </div>
+      </div>
+      
+      <div class="w3-third">
+        <div class="w3-card w3-container" style="min-height:460px">
+        <h3>General</h3><br>
+        <i class="fa fa-diamond w3-margin-bottom w3-text-theme" style="font-size:120px"></i>
+        <p>Technical Support</p>
+        <p>Microsoft Office 365</p>
+        <p>Excellent Customer Service</p>
+        <p>Problem Solving</p>
+        <p>Written and Verbal Communication</p>
+        </div>
+      </div>
+      </div>
+    </div>
+
+  
+  <!-- Achievements -->
+  <div class="w3-container" id="achievements" style="margin-top:46px">
+    <h1 class="w3-xxxlarge w3-text-deep-purple" id="achievements-title"><b>Achievements</b></h1>
+    <hr style="width: 50px; border: 5px solid #673ab7" class="w3-round">
+    <h2>Kappa Kappa Psi Alumni</h2>
+    <h3>Appalachian State University</h3>
+    <p><em>Joined January 2019</em></p>
+    <p>Prior to my enrollment at Bellevue University, I embarked on my collegiate path at Appalachian State University. During my time at ASU, I pursued a degree in music education while simultaneously taking on the role of a marching band section leader. Additionally, I had the honor of joining the esteemed national honorary fraternity of Kappa Kappa Psi. Within the fraternity, I actively engaged in weekly service initiatives, making a positive impact within our community. In 2020, I was entrusted with the role of Parliamentarian, demonstrating my commitment to upholding the fraternity's values and fostering a sense of camaraderie among its members.</p>
+    <h2>John Philip Sousa Band Award</h2>
+    <h3>Stuart W. Cramer High School</h3>
+    <p><em>May 2018</em></p>
+    <p>Introduced in 1955 to honor the top student in the high school band, the John Philip Sousa Band Award recognizes superior musicianship and outstanding dedication.</p>
+    <h2>Outstanding Musical Excellence Award</h2>
+    <h3>University of North Carolina at Charlotte</h3>
+    <p><em>February 2018</em></p>
+    <p>I am honored to have been recognized with the prestigious musical excellence award during the UNC-C band clinic. This distinguished accolade serves as a testament to my unwavering commitment and dedication to the art of music. In recognition of my exceptional abilities, I was bestowed with a $10,000 scholarship to pursue my passion for music education at UNC-C.</p>
+    <h2>North Carolina Governor's School West</h2>
+    <h3>Winston-Salem</h3>
+    <p><em>Summer 2017</em></p>
+    <p>As an accomplished instrumentalist, I had the privilege of attending the prestigious North Carolina Governor's School for Instrumental Music in 2017. Over six transformative weeks, I collaborated with talented peers from across the state, receiving guidance from renowned instructors. The program expanded my musical skills, broadened my repertoire, and deepened my understanding of music theory. The experience at Governor's School was a pivotal moment in my musical journey, shaping me into the dedicated and passionate musician I am today.</p>
+  </div>
+
+<!-- End page content -->
 </div>
 
 <script>
-  // Toggle between hiding and showing blog replies/comments
-  document.getElementById("myBtn").click();
-  function myFunction(id) {
-    var x = document.getElementById(id);
-    if (x.className.indexOf("w3-show") == -1) {
-      x.className += " w3-show";
-    } else { 
-      x.className = x.className.replace(" w3-show", "");
-    }
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Toggle Navigation Menu for small screens
+// Toggle Navigation Menu for small screens
+function toggleNav() {
+  var navDemo = document.getElementById("navDemo");
+  if (navDemo.className.indexOf("w3-show") === -1) {
+    navDemo.className += " w3-show";
+  } else {
+    navDemo.className = navDemo.className.replace(" w3-show", "");
   }
-  
-  function likeFunction(x) {
-    x.style.fontWeight = "bold";
-    x.innerHTML = "✓ Liked";
+}
+
+// Function to scroll to a specific section
+function scrollToSection(sectionId) {
+  var section = document.getElementById(sectionId);
+  if (section) {
+    section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    // Adjust the scroll position to account for the fixed navbar
+    window.scrollBy(0, -80);
   }
-  </script>
-  
-  <script>
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.classList.contains("w3-show")) {
-        x.classList.remove("w3-show");
-      } else {
-        x.classList.add("w3-show");
-      }
-    }
-  </script>
-  
+}
+
+// Close Sidebar when clicking outside
+window.onclick = function(event) {
+  if (event.target === document.getElementById("myOverlay")) {
+    w3_close();
+  }
+}
+</script>
 
 </body>
 </html>
